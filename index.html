@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inégalités d’accès au crédit immobilier au Texas</title>
+    <!-- <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        header {
+            text-align: center;
+            #background-color: #004080;
+            color: white;
+            padding: 1em 0;
+        }
+        .container {
+            display: flex;
+            flex-direction: row;
+            max-width: 1200px;
+            margin: 20px auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .text {
+            flex: 2;
+            margin-right: 20px;
+        }
+        .image {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        h1, h2 {
+            color: #000000;
+        }
+        p {
+            margin-bottom: 15px;
+        }
+        .content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+    </style> -->
+</head>
+<body>
+    <header>
+        <h1>Inégalités d’accès au crédit immobilier au Texas</h1>
+    </header>
+    <p>Par : 
+        <a href="https://www.linkedin.com/in/" target="_blank" style="text-decoration: none; color: #004080; font-weight: bold;">@Mahmoud Mokrane</a>
+        <a href="https://www.linkedin.com/in/" target="_blank" style="text-decoration: none; color: #004080; font-weight: bold;">@Mohammed Dahbani</a>
+        <a href="https://www.linkedin.com/in/" target="_blank" style="text-decoration: none; color: #004080; font-weight: bold;">@Nizar Zerrad</a>
+        <a href="https://www.linkedin.com/in/" target="_blank" style="text-decoration: none; color: #004080; font-weight: bold;">@Ali Amradouch</a>
+        <a href="https://www.linkedin.com/in/" target="_blank" style="text-decoration: none; color: #004080; font-weight: bold;">@Ghaly Sentissi</a>
+       
+    </p>
+
+
+    <!-- Section avec l'image et le texte alignés -->
+    <div class="container">
+        <div class="text">
+            <h2>Accéder à un prêt, un parcours semé d’embûches ?</h2>
+            <p>
+                Acheter une maison, c’est bien plus qu’une simple transaction financière : c’est la concrétisation d’un rêve, celui de la stabilité, de la sécurité et du bien-être familial.
+                Mais si pour certains, l’accès à un prêt immobilier se fait sans trop de difficultés, pour d’autres, la route est longue, voire parfois inaccessible.
+            </p>
+            <p>
+                Le <strong>Texas</strong>, célèbre pour sa diversité culturelle et sa croissance économique, est un parfait exemple des contradictions du marché immobilier américain :
+            </p>
+            <ul>
+                <li>Une population multiculturelle avec 42,5 % de Blancs, 39,7 % d’Hispaniques et 11,8 % d’Afro-Américains.</li>
+                <li>Des taux de refus élevés de prêts immobiliers, bien au-dessus de la moyenne nationale.</li>
+                <li>Des disparités socio-économiques marquées, aggravées par des pratiques discriminatoires parfois inconscientes.</li>
+            </ul>
+        </div>
+        <div class="image">
+            <img src="images/texas.jpeg" alt="Carte du Texas montrant les statistiques démographiques">
+        </div>
+    </div>
+
+    <!-- Suite de l'article -->
+    <div class="content">
+        <h2>Quand les chiffres parlent : des inégalités bien réelles</h2>
+        <p>
+            Nous avons utilisé deux sources principales pour notre analyse :
+            <ul>
+                <li>La <strong>base HMDA</strong> (Home Mortgage Disclosure Act), qui recense les demandes de prêts aux États-Unis.</li>
+                <li>Les <strong>données économiques des comtés texans (GDP)</strong>, pour ajouter une dimension géographique à notre étude.</li>
+            </ul>
+        </p>
+        <p>
+            Ces deux bases contiennent des millions de lignes de données couvrant la période <strong>2018-2023</strong>, avec plus de <strong>900 000 instances par an</strong>.
+        </p>
+        <p>
+            Voici ce que nous avons découvert :  
+            <ul>
+                <li><strong>Les Afro-Américains et les Hispaniques</strong> se voient refuser des prêts beaucoup plus souvent que les Blancs, à revenu égal et même score de crédit équivalent.</li>
+                <li>Dans les zones à <strong>faible PIB par habitant</strong>, les taux de refus explosent.</li>
+                <li>Des variables comme le <strong>sexe et l’âge</strong> influencent également les décisions des banques.</li>
+            </ul>
+        </p>
+
+        
+        <h2>La Data Science à la rescousse : Comment nous avons procédé</h2>
+        
+        <h3>Étape 1 : Une plongée dans les données</h3>
+        <p>
+            Pour comprendre ces disparités, nous avons réalisé un travail de préparation minutieux sur les bases de données :
+        </p>
+        <ul>
+            <li><strong>Fusionner les données :</strong> Nous avons lié les informations de HMDA aux données économiques (GDP) par comté, à l’aide de la clé <code>county_code</code>.</li>
+            <li><strong>Nettoyer les variables :</strong> Suppression des données inutiles, comme les informations redondantes ou peu significatives (exemple : "preapproval").</li>
+            <li><strong>Transformer les données :</strong> Conversion des valeurs ambiguës comme "Not Available" en valeurs exploitables pour nos modèles.</li>
+        </ul>
+        <p>
+            <strong>Au final :</strong> Un jeu de données prêt à être analysé, composé de <strong>100 variables clés</strong> décrivant les profils des emprunteurs, la nature des prêts et les décisions prises par les institutions financières.
+        </p>
+    
+        <h3>Étape 2 : Détecter les biais grâce aux modèles de Machine Learning</h3>
+        <p>
+            Nous avons choisi deux algorithmes puissants pour notre analyse :
+        </p>
+        <ul>
+            <li><strong>XGBoost :</strong> Excellent pour traiter des données complexes, avec une précision impressionnante.</li>
+            <li><strong>Random Forest :</strong> Solide et robuste, il réduit le risque de surapprentissage.</li>
+        </ul>
+        <p>
+            <strong>L’objectif était double :</strong>
+        </p>
+        <ul>
+            <li>Prédire les décisions de prêt avec une grande précision.</li>
+            <li>Identifier les variables (comme la race ou le sexe) qui influencent ces décisions de manière disproportionnée.</li>
+        </ul>
+
+
+    
+        <h2>Des résultats qui interpellent : précision et réduction des biais</h2>
+        <p>
+            Dans le cadre de notre problématique de classification, nous avons choisi d'explorer deux modèles : XGBoost et Random Forest, en raison de leurs avantages spécifiques dans le traitement des données complexes et hétérogènes.
+        </p>
+
+        <p>
+            Les modèles seront entraînés et testés sur un jeu de données filtré, composé uniquement d’individus blancs âgés de 25 à 50 ans. Ce choix a été fait afin d’assurer une analyse plus objective. D'après des études précédentes, cette tranche d'âge est celle qui est généralement moins affectée par des discriminations évidentes. Cela implique que les données de ce groupe présentent moins de biais, en supposant que ce sont les autres groupes ethniques qui sont désavantagés, et non les Blancs qui bénéficient d’un avantage. 
+        </p>
+        <h3>Précision des modèles : Un succès technique</h3>
+        <p>
+            Nos modèles ont montré des performances exceptionnelles :
+        </p>
+        <ul>
+            <li><strong>XGBoost</strong> a atteint une précision de <strong>89 %</strong> et un rappel de <strong>97,6 %</strong>.</li>
+            <li><strong>Random Forest</strong> suit de près avec une précision de <strong>88,2 %</strong>.</li>
+        </ul>
+        <p>
+            <em><strong>Graphique à insérer ici :</strong></em> Une courbe ROC pour comparer les performances des deux modèles.
+        </p>
+    
+        <h3>Réduire les biais : un pas vers l’équité</h3>
+        <p>
+            En testant nos modèles sur des populations <strong>blanches</strong> et <strong>afro-américaines</strong> ayant des profils similaires, nous avons observé une diminution significative des écarts d’acceptation :
+        </p>
+        <ul>
+            <li><strong>Avant le modèle :</strong> Un écart moyen de <strong>14 points</strong> entre les taux d’acceptation des deux groupes.</li>
+            <li><strong>Après le modèle :</strong> L’écart tombe à <strong>9 points</strong> avec XGBoost, soit une réduction de <strong>36 %</strong>.</li>
+        </ul>
+    
+        <h2>Pourquoi ces résultats sont importants ?</h2>
+        <p>
+            Ces conclusions vont au-delà des chiffres. Elles soulignent la nécessité de repenser le processus d’octroi de crédit :
+        </p>
+        <ul>
+            <li><strong>Pour les banques :</strong> Adopter des modèles basés sur des données objectives peut rendre leurs décisions plus justes et transparentes.</li>
+            <li><strong>Pour les consommateurs :</strong> Réduire les discriminations permet d’offrir une égalité des chances à tous les emprunteurs, quel que soit leur profil.</li>
+            <li><strong>Pour les agences de régulation :</strong> Des outils comme ceux que nous avons développés peuvent servir à identifier les pratiques douteuses et à promouvoir des politiques plus équitables.</li>
+        </ul>
+    </div>
+    
+</body>
+</html>

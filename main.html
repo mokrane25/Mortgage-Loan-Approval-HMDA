@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inégalités d’accès au crédit immobilier au Texas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        header {
+            text-align: center;
+            background-color: #004080;
+            color: white;
+            padding: 1em 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2, h3 {
+            color: #004080;
+        }
+        p, ul {
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Inégalités d’accès au crédit immobilier au Texas</h1>
+    </header>
+
+    <div class="container">
+        <h2>Introduction : L’accession à la propriété, un rêve pour certains, un mirage pour d’autres</h2>
+        <p>
+            Devenir propriétaire est souvent perçu comme un jalon essentiel dans la vie d’une famille. Aux États-Unis, la plupart des ménages financent l’achat de leur maison grâce à des prêts hypothécaires. Mais que se passe-t-il lorsque ce droit devient un privilège ?
+        </p>
+        <p>
+            C’est particulièrement vrai au Texas, un État connu pour sa population diversifiée et son économie dynamique. Cependant, derrière cette façade se cachent des inégalités flagrantes dans l’octroi des crédits immobiliers : des refus plus fréquents pour certains groupes ethniques, des écarts injustifiés entre les taux d’acceptation selon la localisation géographique, et des discriminations subtiles mais systématiques basées sur l’âge ou le sexe des emprunteurs.
+        </p>
+        <p>
+            Notre projet s’est fixé un objectif ambitieux : <strong>détecter ces biais discriminatoires</strong> et proposer une solution concrète pour les corriger grâce à des outils de Data Science.
+        </p>
+
+        <h2>Pourquoi le Texas ? Quand diversité et inégalités cohabitent</h2>
+        <ul>
+            <li><strong>Une diversité exceptionnelle :</strong> Avec 42,5 % de Blancs, 39,7 % d’Hispaniques et 11,8 % d’Afro-Américains, le Texas reflète une mosaïque unique.</li>
+            <li><strong>Des disparités économiques marquées :</strong> Les comtés les plus pauvres voient des taux de refus élevés, révélant une inégalité économique alarmante.</li>
+            <li><strong>Un contexte historique et politique :</strong> L’héritage du redlining, combiné à des politiques conservatrices, continue d’influencer le marché.</li>
+        </ul>
+
+        <h2>Une plongée dans les chiffres : Des disparités flagrantes</h2>
+        <p>
+            Nous avons étudié deux sources principales de données :
+        </p>
+        <ul>
+            <li>La <strong>base HMDA (Home Mortgage Disclosure Act)</strong>, avec des informations sur chaque demande de prêt hypothécaire.</li>
+            <li>Les <strong>données économiques du PIB par comté (GDP)</strong>, permettant de croiser les décisions de crédit avec la richesse des territoires.</li>
+        </ul>
+        <p>
+            Ces données ont révélé des disparités flagrantes : des taux de refus plus élevés pour les Afro-Américains et les Hispaniques, et des biais liés à l’âge et au sexe. Les zones économiquement défavorisées souffrent également de discriminations géographiques.
+        </p>
+    </div>
+    <header>
+        <h1>Data Science : Réduire les biais et bâtir un futur équitable</h1>
+    </header>
+
+    <div class="container">
+        <h2>La Data Science à la rescousse : Une méthode rigoureuse</h2>
+        <h3>Étape 1 : Préparer et nettoyer les données</h3>
+        <p>
+            Pour garantir des analyses fiables, nous avons :  
+        </p>
+        <ul>
+            <li><strong>Fusionné les données :</strong> Lié HMDA aux données économiques (GDP) par comté.</li>
+            <li><strong>Nettoyé les variables :</strong> Supprimé les données inutiles et corrigé les valeurs ambiguës.</li>
+            <li><strong>Transformé les données :</strong> Créé un jeu de données clair avec 100 variables clés.</li>
+        </ul>
+
+        <h3>Étape 2 : Analyser et modéliser les biais</h3>
+        <p>
+            Nous avons utilisé deux algorithmes performants :
+        </p>
+        <ul>
+            <li><strong>XGBoost :</strong> Précis et efficace pour traiter des données complexes.</li>
+            <li><strong>Random Forest :</strong> Robuste et idéal pour limiter les erreurs.</li>
+        </ul>
+        <p>
+            Ces modèles ont permis de prédire les décisions de crédit et d’identifier les variables influencées par des biais, comme la race et le sexe.
+        </p>
+
+        <h2>Résultats : Précision et réduction des biais</h2>
+        <p>
+            Nos modèles ont atteint une précision impressionnante (XGBoost : 89 %, Random Forest : 88,2 %). En réduisant les écarts entre groupes ethniques, XGBoost a diminué les biais de 36 %.
+        </p>
+
+        <h2>Conclusion : Un avenir équitable</h2>
+        <p>
+            Ce projet montre qu’il est possible de rendre l’octroi de crédit plus juste. En collaborant avec les banques et les régulateurs, nous pouvons construire un système équitable où chaque demandeur est jugé sur ses mérites, et non sur des critères biaisés.
+        </p>
+    </div>
+
+</body>
+</html>
